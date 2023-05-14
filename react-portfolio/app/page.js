@@ -13,6 +13,7 @@ import web4 from "../public/web4.png";
 import web5 from "../public/web5.png";
 import web6 from "../public/web6.png";
 import deved from "../public/deved.png";
+import web7 from "../public/web7.png";
 export default function Home() {
   // useClient();
   // const [darkMode, setDarkMode] = useState(false);
@@ -141,6 +142,9 @@ export default function Home() {
     </div>
     <div className='basis-1/3 flex-1'>
     <Image src={web6} className="rounded-lg object-cover" width={"100%"} height={"100%"} layout="responsive"/>
+    </div>
+    <div className='basis-1/3 flex-1'>
+    <Image src={web7} className="rounded-lg object-cover" width={"50%"} height={"50%"} layout="responsive"/>
     </div>
     </div>
     </section>
