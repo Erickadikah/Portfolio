@@ -1,3 +1,4 @@
+"use client"
 import Head from 'next/head';
 import { BsFillMoonStarsFill } from 'react-icons/bs';
 import { AiFillTwitterCircle, AiFillGithub, AiFillLinkedin} from 'react-icons/ai';
@@ -14,9 +15,16 @@ import web5 from "../public/web5.png";
 import web6 from "../public/web6.png";
 import deved from "../public/deved.png";
 import web7 from "../public/web7.png";
+import { useState } from 'react';
+// import { ThemeProvider } from "next-themes"
+import { useTheme } from "next-themes";
+// import { useState } from 'react';
+// useState
+
 export default function Home() {
-  // useClient();
-  // const [darkMode, setDarkMode] = useState(false);
+  const [darkMode, setDarkMode] = useState(false);
+  const { systemTheme, theme, setTheme } = useTheme();
+    const currentTheme = theme === 'system' ? systemTheme : theme;
   return (
     <div>
       <Head>
@@ -28,7 +36,7 @@ export default function Home() {
     <nav className='py-10 mb-12 flex justify-between'>
     <h1 className='text-xl'>Erick Adikah</h1>
     <ul className='flex items-center'>
-    <li><BsFillMoonStarsFill className='cursor-pointer text-2xl
+    <li><BsFillMoonStarsFill  onClick={() => theme == "dark"? setTheme('light'): setTheme("dark")}className='cursor-pointer text-2xl
     '/></li>
     <li>
     <a className="bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-8" href="#">Resume</a></li>
@@ -60,7 +68,7 @@ export default function Home() {
     {/* <Image src={deved} alt="Picture of the author" /> add Image component here */}
     <Image src={deved} layout="fill" objectFit='cover'/>
     </div>
-    </section>
+    </section>Resume
     <section>
     <div className='text-center p-10 py-10'>
     <h3 className='text-3xl py-1'>Services I Offer</h3>
