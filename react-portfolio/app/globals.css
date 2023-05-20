@@ -8,36 +8,55 @@
   src: url('/fonts/Roboto-Regular.ttf');
 }
 
-:root {
-  --background-color: #fff;
+/* :root {
+  --background-color: blue : dark(#333);
   --text-color: #333;
+} */
+body.dark-mode {
+  /* Dark mode styles */
+  background-color: #b65c5c;
+  color: bg-gray-800;
+  /* background-color: aqua; */
+
 }
-/* 
+
+.dark-mode .card {
+
+  background-color: #333;
+  color: black;
+
+  /* Dark mode styles for specific cards */
+}
+
 .dark-mode {
   --background-color: #333;
   --text-color: #fff;
-} */
-.dark {
+}
+/* .dark {
   background-color: #333;
   /* color: #fff; */
-}
+/* } */
 
-.dark .text-gray-800 {
+/* .dark .text-gray-800 {
   color: #121010;
 }
 
 .dark .text-teal-600 {
   color: black;
 }
+.darkMode {
+  background-color: #333;
+  color: gold;
+}
 
 
 @layer base{
     body {
-        @apply dark:bg-gray-800 bg-white
+        @apply dark:bg-gray-800 bg-white;
     }
 }
 
 body {
   background-color: var(--background-color);
   color: var(--text-color);
-}
+} */ 

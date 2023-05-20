@@ -26,8 +26,9 @@ export default function Home() {
   // const { systemTheme, theme, setTheme } = useTheme();
   //   const currentTheme = theme === 'system' ? systemTheme : theme;
   return (
-    <div className={darkMode ? "dark" : ""}>
-      <Head>
+    <div className={darkMode ? "dark" : ""} >
+    <div className='dark:bg-gray-900'>
+      <Head className='dark:bg-gray-900'>
       <title>Erick Adikah</title>
       <meta name='description' content='generic'></meta>
       </Head>
@@ -68,7 +69,7 @@ export default function Home() {
     {/* <Image src={deved} alt="Picture of the author" /> add Image component here */}
     <Image src={deved} layout="fill" objectFit='cover'/>
     </div>
-    </section>Resume
+    </section>
     <section>
     <div className='text-center p-10 py-10'>
     <h3 className='text-3xl py-1'>Services I Offer</h3>
@@ -81,7 +82,7 @@ export default function Home() {
     </p>
     </div>
     <div className='lg:flex gap-10'>
-    <div className='text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white'>
+    <div className='text-center shadow-lg p-10 rounded-xl my-10 dark:bg-gray-900'>
     <Image src={design} width={100} height={100} className='mx-auto' />
     <h3 className='text-lg font-medium pt-8 pb-2'>Graphics Design</h3>
     <p className='py-2'>
@@ -93,7 +94,7 @@ export default function Home() {
     <p className='text-gray-800 py-1'>Correl Draw</p>
     <p className='text-gray-800 py-1'>Figma</p>
     </div>
-    <div className='text-center shadow-lg p-10 rounded-xl my-10 '>
+    <div className='text-center shadow-lg p-10 rounded-xl my-10  dark:bg-gray-900'>
       <Image src={code} width={100} height={100} className='mx-auto' />
     <h3 className='text-lg font-medium pt-8 pb-2'>Websites Design</h3>
     <p className='py-2'>
@@ -107,7 +108,7 @@ export default function Home() {
     <p className='text-gray-800 py-1'>NextJs</p>
     <p className='text-gray-800 py-1'>Python</p>
     </div>
-    <div className='text-center shadow-lg p-10 rounded-xl my-10 '>
+    <div className='text-center shadow-lg p-10 rounded-xl my-10  dark:bg-gray-900'>
       <Image src={consulting} width={100} height={100} className='mx-auto' />
     <h3 className='text-lg font-medium pt-8 pb-2'>Reach me Through my Socials</h3>
     <p className='py-2'>
@@ -123,8 +124,8 @@ export default function Home() {
     </section>
     <section>
     <div>
-    <h3 className='text-3xl text-center py-1'>Portfolio</h3>
-    <p className='text-md py-2 leading-8 text-grey-800'>
+    <h3 className='text-3xl text-center py-1 '>Portfolio</h3>
+    <p className='text-md py-2 leading-8 text-grey-800 '>
     Since I started my career as a developer and graphics designer, 
     I have worked with several companies and individuals to create websites and graphics for their businesses.
     <span className='text-teal-600'>Here are some of the Projects I have worked on:
@@ -158,6 +159,7 @@ export default function Home() {
     </section>
     <div className='text-center px-4'>Erick Adikah © {new Date().getFullYear()}</div>
     </main>
+    </div>
     </div>
   )
 }
