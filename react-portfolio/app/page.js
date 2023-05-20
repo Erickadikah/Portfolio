@@ -23,10 +23,10 @@ import { useTheme } from "next-themes";
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
-  const { systemTheme, theme, setTheme } = useTheme();
-    const currentTheme = theme === 'system' ? systemTheme : theme;
+  // const { systemTheme, theme, setTheme } = useTheme();
+  //   const currentTheme = theme === 'system' ? systemTheme : theme;
   return (
-    <div>
+    <div className={darkMode ? "dark" : ""}>
       <Head>
       <title>Erick Adikah</title>
       <meta name='description' content='generic'></meta>
@@ -36,7 +36,7 @@ export default function Home() {
     <nav className='py-10 mb-12 flex justify-between'>
     <h1 className='text-xl'>Erick Adikah</h1>
     <ul className='flex items-center'>
-    <li><BsFillMoonStarsFill  onClick={() => theme == "dark"? setTheme('light'): setTheme("dark")}className='cursor-pointer text-2xl
+    <li><BsFillMoonStarsFill  onClick={() => setDarkMode(!darkMode)} className='cursor-pointer text-2xl
     '/></li>
     <li>
     <a className="bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-8" href="#">Resume</a></li>
@@ -50,7 +50,7 @@ export default function Home() {
        I have worked with several companies and individuals to create websites and graphics designs for their businesses.
       </p>
     </div>
-    <div className='text-5xl flex justify-center gap-16 py-3 text-gray-600'>
+    <div className='text-5xl flex justify-center gap-16 py-3 text-gray-600 dark:bg-grey-900'>
     <a href="https://github.com/ErickAdikah ">
       <AiFillGithub />
       </a>
@@ -64,7 +64,7 @@ export default function Home() {
       <FaEnvelope />
       </a>
     </div>
-    <div className='mx-auto relative bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 mt-20 overflow-hidden md:h-96 md:w-96'>
+    <div className='mx-auto relative bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 mt-20 overflow-hidden md:h-96 md:w-96 dark:bg-grey-900'>
     {/* <Image src={deved} alt="Picture of the author" /> add Image component here */}
     <Image src={deved} layout="fill" objectFit='cover'/>
     </div>

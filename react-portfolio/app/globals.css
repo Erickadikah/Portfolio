@@ -17,6 +17,20 @@
   --background-color: #333;
   --text-color: #fff;
 } */
+.dark {
+  background-color: #333;
+  /* color: #fff; */
+}
+
+.dark .text-gray-800 {
+  color: #121010;
+}
+
+.dark .text-teal-600 {
+  color: black;
+}
+
+
 @layer base{
     body {
         @apply dark:bg-gray-800 bg-white
