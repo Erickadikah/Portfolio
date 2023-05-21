@@ -220,19 +220,25 @@ export default function Home() {
                 alt="project6"
               />
             </div>
-            <div className="basis-1/3 flex-1">
+            <div className="basis-1/2 flex-2">
               <Image
                 className="rounded-lg object-cover"
-                width={"100%"}
-                height={"100%"}
+                width={"80%"}
+                height={"80%"}
                 layout="responsive"
                 src={web7}
                 alt="project7"
               />
+              </div>
+              </div>
+              <div className="flex justify-center py-2 dark:text-white
+              ">
+              <footer>
+                Erick adikah © {new Date().getFullYear()}
+              </footer>
+              </div>
+              </section>
+              </main>
             </div>
-          </div>
-        </section>
-      </main>
-    </div>
   );
 }
