@@ -1,7 +1,7 @@
 "use client"
 import Head from 'next/head';
 import { BsFillMoonStarsFill } from 'react-icons/bs';
-import { AiFillTwitterCircle, AiFillGithub, AiFillLinkedin, AiFillYoutube} from 'react-icons/ai';
+import { AiFillTwitterCircle, AiFillGithub, AiFillLinkedin,} from 'react-icons/ai';
 import { FaEnvelope } from 'react-icons/fa'
 import Image from 'next/image';
 import design from "../public/design.png";
@@ -63,27 +63,27 @@ export default function Home() {
               Freelancer providing services for programming and design content
               needs. Join me down below and let&apos;s get cracking!
             </p>
-            <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600 dark:text-gray-400">
+            <div className="text-5xl flex justify-center gap-5 py-3 text-gray-600 dark:text-gray-400">
             <a href="https://github.com/ErickAdikah ">
             <AiFillGithub />
             </a>
               <a href="https://twitter.com/https:/erick_adikah">
             <AiFillTwitterCircle />
             </a>
-              <a href="https://www.linkedin.com/in/erick-adikah-0b0b3a1b0/">
-              <AiFillLinkedin />
-              </a>
               <a href="mailto:erickadikah2030@gmail.com">
             <FaEnvelope />
             </a>
+            <a href="https://www.linkedin.com/in/erick-adikah-0b0b3a1b0/">
+              <AiFillLinkedin />
+              </a>
             </div>
-            <div className="mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 relative overflow-hidden mt-20 md:h-96 md:w-96">
-              <Image alt="profile" src={deved} layout="fill" objectFit="cover" />
-            </div>
+            <div className="mx-auto bg-gradient-to-b from-teal-500 rounded-full w-40 h-40 relative overflow-hidden mt-20 md:h-60 md:w-60">
+            <Image alt="profile" src={deved} layout="fill" objectFit="cover"/>
+          </div>
           </div>
         </section>
         <section>
-          <div>
+          <div className='mx-auto'>
             <h3 className="text-3xl py-1 dark:text-white ">Services I offer</h3>
             <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
               Since the beginning of my journey as a freelance graphics designer and
