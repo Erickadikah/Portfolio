@@ -269,7 +269,7 @@ export default function Home() {
               <h3 className="text-2xl font-bold text-center dark:text-white">
                 Art Galary
               </h3>
-              <p className="bg-[#A09CA4] text-sm md:text-base p-2 md:p-6 rounded-md  dark:text-white">
+              <p className="bg-[#003459] text-sm md:text-base p-2 md:p-6 rounded-md  dark:text-white">
                 Art Galary is a website where you can find all the art work of
                 your favorite artist. and you can also buy the art work from the
                 website. you can also find the art work of your{" "}
@@ -298,11 +298,13 @@ export default function Home() {
               <h3 className="text-2xl font-bold text-center dark:text-white">
                 Digital Wallet
               </h3>
-              <p className="bg-[#A09CA4] text-sm md:text-base p-2 md:p-6 rounded-md  dark:text-white">
-                the effortless way to manage your job application documents. Store your CV, certificates, images,
-                and cover letters in one secure place. Retrieve them with ease when applying for job vacancies.
-                 Simplify your application process and impress employers. 
-                Try Digital Wallet today and experience a streamlined approach to job hunting.
+              <p className="bg-[#003459] text-sm md:text-base p-2 md:p-6 rounded-md  dark:text-white">
+                the effortless way to manage your job application documents.
+                Store your CV, certificates, images, and cover letters in one
+                secure place. Retrieve them with ease when applying for job
+                vacancies. Simplify your application process and impress
+                employers. Try Digital Wallet today and experience a streamlined
+                approach to job hunting.
                 <span className="text-teal-500">
                   and you can also share your data with other
                 </span>{" "}
@@ -323,12 +325,35 @@ export default function Home() {
               <h3 className="text-2xl font-bold text-center dark:text-white">
                 Traffi Watch
               </h3>
-              <p className="bg-[#A09CA4] text-sm md:text-base p-2 md:p-6 rounded-md  dark:text-white">
-                 your go-to traffic monitoring and navigation website.
-                <span className="text-teal-500"> informed about city traffic and effortlessly navigate to your destination.</span>S
-                Get real-time updates from fellow drivers, ensuring a smooth journey. 
-                 Try Traffi Watch today and make your commute a breeze.
+              <p className="bg-[#003459] text-sm md:text-base p-2 md:p-6 rounded-md  dark:text-white">
+                your go-to traffic monitoring and navigation website.
+                <span className="text-teal-500">
+                  {" "}
+                  informed about city traffic and effortlessly navigate to your
+                  destination.
+                </span>
+                S Get real-time updates from fellow drivers, ensuring a smooth
+                journey. Try Traffi Watch today and make your commute a breeze.
+                <p>
+                  {" "}
+                  Stack used:{" "}
+                  <span className="text-teal-500">
+                  <ul className="flex flex-row gap-6">
+                  <li>React js</li>
+                  <li>Next js</li> 
+                  <li>Tailwind css</li>
+                  <li>Mapbox</li> 
+                  </ul>
+                  </span>
+                </p>
               </p>
+              <div className=" text-center text-white mt-6 ">
+              <h1 className=" font-bold text-2xl">Skills</h1>
+              <p className="bg-[#003459] mt-4 p-6">
+              I have strong knowledge of HTML, CSS, JavaScript, React, Next js, Tailwind css, Node js, Express js, MongoDB, Git, Github, and Heroku.
+              And I am also familiar with Firebase.
+              </p>
+              </div>
             </div>
           </div>
           <div
