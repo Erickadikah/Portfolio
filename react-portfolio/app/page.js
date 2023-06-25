@@ -320,7 +320,7 @@ export default function Home() {
               items-end text-right x1:-m-1-16 z-10"
             >
               <p className="font-titleFont text-textGreen text-center text-sm tracking-wide dark:text-white">
-                Feature Projects
+                Future Projects
               </p>
               <h3 className="text-2xl font-bold text-center dark:text-white">
                 Traffi Watch
