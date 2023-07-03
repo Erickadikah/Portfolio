@@ -22,6 +22,13 @@ import web10 from "../public/web10.png";
 import web8 from "../public/web8.png";
 import { useState } from "react";
 import { useTheme } from "next-themes";
+import Services from "../app/components/Services/index.js";
+import { RiReactjsLine } from 'react-icons/ri';
+import { TbBrandNextjs } from 'react-icons/tb';
+import { FaNodeJs } from 'react-icons/fa'
+import { BiLogoFirebase } from 'react-icons/bi'
+import { SiTailwindcss } from 'react-icons/si'
+import { SiJavascript } from 'react-icons/si'
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
@@ -298,7 +305,7 @@ export default function Home() {
               <h3 className="text-2xl font-bold text-center dark:text-white">
                 Digital Wallet
               </h3>
-              <p className="bg-[#003459] text-sm md:text-base p-2 md:p-6 rounded-md  dark:text-white">
+              <p className="bg-[#003459] text-sm md:text-base md:p-6 rounded-md  dark:text-white">
                 the effortless way to manage your job application documents.
                 Store your CV, certificates, images, and cover letters in one
                 secure place. Retrieve them with ease when applying for job
@@ -338,24 +345,51 @@ export default function Home() {
                   {" "}
                   Stack used:{" "}
                   <span className="text-teal-500">
-                  <ul className="flex flex-row gap-6">
-                  <li>React js</li>
-                  <li>Next js</li> 
-                  <li>Tailwind css</li>
-                  <li>Mapbox</li> 
-                  </ul>
+                    <ul className="flex flex-row gap-6">
+                      <li>React js</li>
+                      <li>Next js</li>
+                      <li>Tailwind css</li>
+                      <li>Mapbox</li>
+                    </ul>
                   </span>
                 </p>
               </p>
               <div className=" text-center text-white mt-6 ">
-              <h1 className=" font-bold text-2xl">Skills</h1>
-              <p className="bg-[#003459] mt-4 p-6">
-              I have strong knowledge of HTML, CSS, JavaScript, React, Next js, Tailwind css, Node js, Express js, MongoDB, Git, Github, and Heroku.
-              And I am also familiar with Firebase.
-              </p>
+                <h1 className=" font-bold text-2xl">Skills</h1>
+                <p className="bg-[#003459] mt-4 p-6">
+                  I have strong knowledge of HTML, CSS, JavaScript, React, Next
+                  js, Tailwind css, Node js, Express js, MongoDB, Git, Github,
+                  and Heroku. And I am also familiar with Firebase.
+                </p>
+                <div class="flex justify-center items-center space-x-4 mt-8 flex-wrap gap-8">
+                <div class="card bg-[#363B49] rounded-lg p-4 w-45 h-40 flex flex-col items-center">
+                  <BiLogoFirebase style={{ color: 'yellow' }} class="card-image w-32 h-32 object-cover rounded-full mb-4" alt="Stack 1" />
+                  <p class="card-title text-xl mb-2 text-center text-white">Firebase</p>
+                </div>
+                <div class="card bg-[#363B49] rounded-lg p-4 w-45 h-40 flex flex-col items-center">
+                  <FaNodeJs class="card-image w-32 h-32 object-cover rounded-full mb-4" alt="Stack 2" />
+                  <p class="card-title text-xl mb-2 text-center text-white">NodeJs</p>
+                </div>
+                <div class="card bg-[#363B49] rounded-lg p-4 w-45 h-40 flex flex-col items-center">
+                  <TbBrandNextjs style={{ color: '#61DAFB' }} className="card-image w-32 h-32 object-cover rounded-full mb-4" alt="Stack 2" />
+                  <p class="card-title text-xl  mb-2 text-center text-white">NextJs</p>
+                </div>
+                <div class="card bg-[#363B49] rounded-lg p-4 w-45 h-40 flex flex-col items-center">
+                  <RiReactjsLine style={{ color: '#61DAFB' }} class="card-image w-32 h-32 object-cover rounded-full mb-4" src={consulting} alt="Stack 2" />
+                  <p class="card-title text-xl mb-2 text-center text-white">ReactJs</p>
+                </div>
+                <div class="card bg-[#363B49] rounded-lg p-4 w-45 h-40 flex flex-col items-center">
+                  <SiTailwindcss style={{ color: '#61DAFB' }} class="card-image w-32 h-32 object-cover rounded-full mb-4" src={consulting} alt="Stack 2" />
+                  <p class="card-title text-xl mb-2 text-center text-white">Tailwind CSS</p>
+                </div>
+                <div class="card bg-[#363B49] rounded-lg p-4 w-45 h-40 flex flex-col items-center">
+                  <SiJavascript style={{ color: 'yellow' }} class="card-image w-32 h-32 object-cover rounded-full mb-4" src={consulting} alt="Stack 2" />
+                  <p class="card-title text-xl mb-2 text-center text-white">JavaScript</p>
+                </div>
+              </div>
               </div>
             </div>
-          </div>
+          </div>        
           <div
             className="flex justify-center py-2 dark:text-white
               "
