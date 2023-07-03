@@ -23,12 +23,14 @@ import web8 from "../public/web8.png";
 import { useState } from "react";
 import { useTheme } from "next-themes";
 import Services from "../app/components/Services/index.js";
-import { RiReactjsLine } from 'react-icons/ri';
-import { TbBrandNextjs } from 'react-icons/tb';
-import { FaNodeJs } from 'react-icons/fa'
-import { BiLogoFirebase } from 'react-icons/bi'
-import { SiTailwindcss } from 'react-icons/si'
-import { SiJavascript } from 'react-icons/si'
+import { RiReactjsLine } from "react-icons/ri";
+import { TbBrandNextjs } from "react-icons/tb";
+import { FaNodeJs } from "react-icons/fa";
+import { BiLogoFirebase } from "react-icons/bi";
+import { SiTailwindcss } from "react-icons/si";
+import { SiJavascript } from "react-icons/si";
+import { BsReddit, BsInstagram } from "react-icons/bs";
+import { motion } from "framer-motion";
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
@@ -84,6 +86,9 @@ export default function Home() {
               </a>
               <a href="https://www.linkedin.com/in/erick-adikah-0b0b3a1b0/">
                 <AiFillLinkedin />
+              </a>
+              <a>
+                <BsReddit />
               </a>
             </div>
             <div className="mx-auto bg-gradient-to-b from-teal-500 rounded-full w-40 h-40 relative overflow-hidden mt-20 md:h-60 md:w-60">
@@ -361,35 +366,101 @@ export default function Home() {
                   js, Tailwind css, Node js, Express js, MongoDB, Git, Github,
                   and Heroku. And I am also familiar with Firebase.
                 </p>
-                <div class="flex justify-center items-center space-x-4 mt-8 flex-wrap gap-8">
-                <div class="card bg-[#363B49] rounded-lg p-4 w-45 h-40 flex flex-col items-center">
-                  <BiLogoFirebase style={{ color: 'yellow' }} class="card-image w-32 h-32 object-cover rounded-full mb-4" alt="Stack 1" />
-                  <p class="card-title text-xl mb-2 text-center text-white">Firebase</p>
+                <div class="flex justify-center items-center mt-8 flex-wrap gap-5 sm:gap-12 sm:flex-row sm:justify-between">
+                  <motion.div
+                    initial={{ y: -10, opacity: 0 }}
+                    animate={{ y: 0, opacity: 1 }}
+                    transition={{ duration: 0.1, delay: 0.2 }}
+                    class="card bg-[#363B49] rounded-lg p-4 w-45 h-40 sm:w-32 sm:h-32 items-center"
+                  >
+                    <BiLogoFirebase
+                      style={{ color: "yellow" }}
+                      class="card-image w-16 h-16 object-cover rounded-full mb-4"
+                      alt="Stack 1"
+                    />
+                    <p class="card-title text-xl mb-2 text-center text-white">
+                      Firebase
+                    </p>
+                  </motion.div>
+                  <motion.div
+                    initial={{ y: -10, opacity: 0 }}
+                    animate={{ y: 0, opacity: 1 }}
+                    transition={{ duration: 0.1, delay: 0.2 }}
+                    class="card bg-[#363B49] rounded-lg p-4 w-45 h-40 sm:w-32 sm:h-32 flex flex-col items-center"
+                  >
+                    <FaNodeJs
+                      class="card-image w-16 h-16 object-cover rounded-full mb-4"
+                      alt="Stack 2"
+                    />
+                    <p class="card-title text-xl mb-2 text-center text-white">
+                      NodeJs
+                    </p>
+                  </motion.div>
+                  <motion.div
+                    initial={{ y: -10, opacity: 0 }}
+                    animate={{ y: 0, opacity: 1 }}
+                    transition={{ duration: 0.1, delay: 0.2 }}
+                    class="card bg-[#363B49] rounded-lg p-4 w-45 h-40 sm:w-32 sm:h-32 flex flex-col items-center"
+                  >
+                    <TbBrandNextjs
+                      style={{ color: "#61DAFB" }}
+                      class="card-image w-16 h-16 object-cover rounded-full mb-4"
+                      alt="Stack 2"
+                    />
+                    <p class="card-title text-xl mb-2 text-center text-white">
+                      NextJs
+                    </p>
+                  </motion.div>
+                  <motion.div
+                    initial={{ y: -10, opacity: 0 }}
+                    animate={{ y: 0, opacity: 1 }}
+                    transition={{ duration: 0.1, delay: 0.2 }}
+                    class="card bg-[#363B49] rounded-lg p-4 w-45 h-40 sm:w-32 sm:h-32 flex flex-col items-center"
+                  >
+                    <RiReactjsLine
+                      style={{ color: "#61DAFB" }}
+                      class="card-image w-16 h-16 object-cover rounded-full mb-4"
+                      alt="Stack 2"
+                    />
+                    <p class="card-title text-xl mb-2 text-center text-white">
+                      ReactJs
+                    </p>
+                  </motion.div>
+                  <motion.div
+                    initial={{ y: -10, opacity: 0 }}
+                    animate={{ y: 0, opacity: 1 }}
+                    transition={{ duration: 0.1, delay: 0.2 }}
+                    class="card bg-[#363B49] rounded-lg p-4 w-45 h-40 sm:w-32 sm:h-32 flex flex-col items-center"
+                  >
+                    <SiTailwindcss
+                      style={{ color: "#61DAFB" }}
+                      fontSize={30}
+                      class="card-image w-16 h-16 object-cover rounded-full mb-4"
+                      alt="Stack 2"
+                    />
+                    <p class="card-title text-xl mb-2 text-center text-white">
+                      Tailwind
+                    </p>
+                  </motion.div>
+                  <motion.div
+                    initial={{ y: -10, opacity: 0 }}
+                    animate={{ y: 0, opacity: 1 }}
+                    transition={{ duration: 0.1, delay: 0.2 }}
+                    class="card bg-[#363B49] rounded-lg p-4 w-45 h-40 sm:w-32 sm:h-32 flex flex-col items-center"
+                  >
+                    <SiJavascript
+                      style={{ color: "yellow" }}
+                      class="card-image w-16 h-16 object-cover rounded-full mb-4"
+                      alt="Stack 2"
+                    />
+                    <p class="card-title text-xl mb-2 text-center text-white">
+                      JavaScript
+                    </p>
+                  </motion.div>
                 </div>
-                <div class="card bg-[#363B49] rounded-lg p-4 w-45 h-40 flex flex-col items-center">
-                  <FaNodeJs class="card-image w-32 h-32 object-cover rounded-full mb-4" alt="Stack 2" />
-                  <p class="card-title text-xl mb-2 text-center text-white">NodeJs</p>
-                </div>
-                <div class="card bg-[#363B49] rounded-lg p-4 w-45 h-40 flex flex-col items-center">
-                  <TbBrandNextjs style={{ color: '#61DAFB' }} className="card-image w-32 h-32 object-cover rounded-full mb-4" alt="Stack 2" />
-                  <p class="card-title text-xl  mb-2 text-center text-white">NextJs</p>
-                </div>
-                <div class="card bg-[#363B49] rounded-lg p-4 w-45 h-40 flex flex-col items-center">
-                  <RiReactjsLine style={{ color: '#61DAFB' }} class="card-image w-32 h-32 object-cover rounded-full mb-4" src={consulting} alt="Stack 2" />
-                  <p class="card-title text-xl mb-2 text-center text-white">ReactJs</p>
-                </div>
-                <div class="card bg-[#363B49] rounded-lg p-4 w-45 h-40 flex flex-col items-center">
-                  <SiTailwindcss style={{ color: '#61DAFB' }} class="card-image w-32 h-32 object-cover rounded-full mb-4" src={consulting} alt="Stack 2" />
-                  <p class="card-title text-xl mb-2 text-center text-white">Tailwind CSS</p>
-                </div>
-                <div class="card bg-[#363B49] rounded-lg p-4 w-45 h-40 flex flex-col items-center">
-                  <SiJavascript style={{ color: 'yellow' }} class="card-image w-32 h-32 object-cover rounded-full mb-4" src={consulting} alt="Stack 2" />
-                  <p class="card-title text-xl mb-2 text-center text-white">JavaScript</p>
-                </div>
-              </div>
               </div>
             </div>
-          </div>        
+          </div>
           <div
             className="flex justify-center py-2 dark:text-white
               "
