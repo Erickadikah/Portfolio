@@ -20,6 +20,7 @@ import web6 from "../public/web6.png";
 import deved from "../public/deved.png";
 import web10 from "../public/web10.png";
 import web8 from "../public/web8.png";
+import web12 from "../public/web12.png";
 import { useState } from "react";
 import { useTheme } from "next-themes";
 import Services from "../app/components/Services/index.js";
@@ -33,6 +34,8 @@ import { BsReddit, BsInstagram } from "react-icons/bs";
 import { motion } from "framer-motion";
 import { FaPython } from "react-icons/fa";
 import { BiLogoGit } from "react-icons/bi";
+import { TbBrandGithub } from "react-icons/tb";
+import { RxOpenInNewWindow } from "react-icons/rx";
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
@@ -261,18 +264,6 @@ export default function Home() {
                 alt="project6"
               />
             </div>
-            <a href="https://art-gala2b2cbb.netlify.app/">
-              <div className="basis-1/2 flex-2">
-                <Image
-                  className="w-full h-full object-contain justify-between"
-                  width={"80%"}
-                  height={"80%"}
-                  layout="responsive"
-                  src={web10}
-                  alt="project7"
-                />
-              </div>
-            </a>
             <div
               className="w-full x1:w-1/2 fle flex-col gap-6 
           items-end text-right x1:-m-1-16 z-10"
@@ -283,6 +274,18 @@ export default function Home() {
               <h3 className="text-2xl font-bold text-center dark:text-white">
                 Art Galary
               </h3>
+              <a href="https://art-gala2b2cbb.netlify.app/">
+                <div className="basis-1/2 flex-2">
+                  <Image
+                    className="w-full h-full object-contain justify-between"
+                    width={"80%"}
+                    height={"80%"}
+                    layout="responsive"
+                    src={web10}
+                    alt="project7"
+                  />
+                </div>
+              </a>
               <p className="bg-[#003459] text-sm md:text-base p-2 md:p-6 rounded-md  dark:text-white">
                 Art Galary is a website where you can find all the art work of
                 your favorite artist. and you can also buy the art work from the
@@ -290,18 +293,6 @@ export default function Home() {
                 <span className="text-teal-500">favorite </span>artist.
               </p>
             </div>
-            <a href="https://digital-credentials-wallet.vercel.app/">
-              <div className="basis-1/2 flex-2">
-                <Image
-                  className="w-full h-full object-contain justify-between"
-                  width={"80%"}
-                  height={"80%"}
-                  layout="responsive"
-                  src={web8}
-                  alt="project7"
-                />
-              </div>
-            </a>
             <div
               className="w-full x1:w-1/2 fle flex-col gap-6 
               items-end text-right x1:-m-1-16 z-10"
@@ -312,21 +303,35 @@ export default function Home() {
               <h3 className="text-2xl font-bold text-center dark:text-white">
                 Digital Wallet
               </h3>
+              <a href="https://digital-credentials-wallet.vercel.app/">
+                <div className="basis-1/2 flex-2">
+                  <Image
+                    className="w-full object-contain justify-between"
+                    layout="responsive"
+                    src={web8}
+                    alt="project7"
+                  />
+                </div>
+              </a>
               <p className="bg-[#003459] text-sm md:text-base md:p-6 rounded-md  dark:text-white">
                 the effortless way to manage your job application documents.
                 Store your CV, certificates, images, and cover letters in one
-                secure place. Retrieve them with ease when applying for job
-                vacancies. Simplify your application process and impress
-                employers. Try Digital Wallet today and experience a streamlined
-                approach to job hunting.
+                secure place.{" "}
                 <span className="text-teal-500">
-                  and you can also share your data with other
+                  and you can also share your data with other's
                 </span>{" "}
-                people.
-                <p>
-                  {" "}
-                  Stack used: <span className="text-teal-500">MERN Stack</span>
-                </p>
+                <ul
+                  className="text-xs md:text-sm font-titleFont tracking-wide flex gap-2
+                md:gap-5 justify-between text-textDark flex-wrap"
+                >
+                  <li className="text-sm md:text-base">React</li>
+                  <li className="text-sm md:text-base">JavaScript</li>
+                  <li className="text-sm md:text-base">NodeJs</li>
+                  <li className="text-sm md:text-base">Express</li>
+                  <li className="text-sm md:text-base">MongoDB</li>
+                  <li className="text-sm md:text-base">Redux</li>
+                  <li className="text-sm md:text-base">Netlify Deployment </li>
+                </ul>
               </p>
             </div>
             <div
@@ -339,6 +344,14 @@ export default function Home() {
               <h3 className="text-2xl font-bold text-center dark:text-white">
                 Traffi Watch
               </h3>
+              <div className="basis-1/2 flex-2">
+                <Image
+                  className="w-full h-full object-contain justify-between"
+                  layout="responsive"
+                  src={web12}
+                  alt="project7"
+                />
+              </div>
               <p className="bg-[#003459] text-sm md:text-base p-2 md:p-6 rounded-md  dark:text-white">
                 your go-to traffic monitoring and navigation website.
                 <span className="text-teal-500">
@@ -369,128 +382,127 @@ export default function Home() {
                   and Heroku. And I am also familiar with Firebase.
                 </p>
                 <div class="flex justify-center items-center mt-8 flex-wrap gap-5 sm:gap-8 sm:flex-row sm:justify-between">
-                  <motion.div
-                    initial={{ y: -10, opacity: 0 }}
-                    animate={{ y: 0, opacity: 1 }}
-                    transition={{ duration: 0.1, delay: 0.2 }}
-                    class="card bg-[#363B49] rounded-lg p-4 w-45 h-40 sm:w-32 sm:h-32 items-center hover:bg-[#4A4E5C]"
-                  >
-                    <BiLogoFirebase
-                      style={{ color: "yellow" }}
-                      class="card-image w-16 h-16 object-cover rounded-full mb-4"
-                      alt="Stack 1"
-                    />
-                    <p class="card-title text-xl mb-2 text-center text-white">
-                      Firebase
-                    </p>
-                  </motion.div>
-                  <motion.div
-                    initial={{ y: -10, opacity: 0 }}
-                    animate={{ y: 0, opacity: 1 }}
-                    transition={{ duration: 0.1, delay: 0.2 }}
-                    class="card bg-[#363B49] rounded-lg p-4 w-45 h-40 sm:w-32 sm:h-32 flex flex-col items-center"
-                  >
-                    <FaNodeJs
-                      class="card-image w-16 h-16 object-cover rounded-full mb-4"
-                      alt="Stack 2"
-                      style={{ color: "green" }}
-                    />
-                    <p class="card-title text-xl mb-2 text-center text-white">
-                      NodeJs
-                    </p>
-                  </motion.div>
-                  <motion.div
-                    initial={{ y: -10, opacity: 0 }}
-                    animate={{ y: 0, opacity: 1 }}
-                    transition={{ duration: 0.1, delay: 0.2 }}
-                    class="card bg-[#363B49] rounded-lg p-4 w-45 h-40 sm:w-32 sm:h-32 flex flex-col items-center"
-                  >
-                    <TbBrandNextjs
-                      style={{ color: "#61DAFB" }}
-                      class="card-image w-16 h-16 object-cover rounded-full mb-4"
-                      alt="Stack 2"
-                    />
-                    <p class="card-title text-xl mb-2 text-center text-white">
-                      NextJs
-                    </p>
-                  </motion.div>
-                  <motion.div
-                    initial={{ y: -10, opacity: 0 }}
-                    animate={{ y: 0, opacity: 1 }}
-                    transition={{ duration: 0.1, delay: 0.2 }}
-                    class="card bg-[#363B49] rounded-lg p-4 w-45 h-40 sm:w-32 sm:h-32 flex flex-col items-center"
-                  >
-                    <RiReactjsLine
-                      style={{ color: "#61DAFB", fontSize: "30px" }}
-                      class="card-image w-16 h-16 object-cover rounded-full mb-4"
-                      alt="Stack 2"
-                    />
-                    <p class="card-title text-xl mb-2 text-center text-white">
-                      ReactJs
-                    </p>
-                  </motion.div>
-                  <motion.div
-                    initial={{ y: -10, opacity: 0 }}
-                    animate={{ y: 0, opacity: 1 }}
-                    transition={{ duration: 0.1, delay: 0.2 }}
-                    class="card bg-[#363B49] rounded-lg p-4 w-45 h-40 sm:w-32 sm:h-32 flex flex-col items-center"
-                  >
-                    <SiTailwindcss
-                      style={{ color: "#61DAFB" }}
-                      fontSize={30}
-                      class="card-image w-16 h-16 object-cover rounded-full mb-4"
-                      alt="Stack 2"
-                    />
-                    <p class="card-title text-xl mb-2 text-center text-white">
-                      Tailwind
-                    </p>
-                  </motion.div>
-                  <motion.div
-                    initial={{ y: -10, opacity: 0 }}
-                    animate={{ y: 0, opacity: 1 }}
-                    transition={{ duration: 0.1, delay: 0.2 }}
-                    class="card bg-[#363B49] rounded-lg p-4 w-45 h-40 sm:w-32 sm:h-32 flex flex-col items-center"
-                  >
-                    <SiJavascript
-                      style={{ color: "yellow" }}
-                      class="card-image w-16 h-16 object-cover rounded-full mb-4"
-                      alt="Stack 2"
-                    />
-                    <p class="card-title text-xl mb-2 text-center text-white">
-                      JavaScript
-                    </p>
-                  </motion.div>
-                   <motion.div
-                    initial={{ y: -10, opacity: 0 }}
-                    animate={{ y: 0, opacity: 1 }}
-                    transition={{ duration: 0.1, delay: 0.2 }}
-                    class="card bg-[#363B49] p-4 w-45 h-40 sm:w-32 sm:h-32 flex flex-col items-center"
-                  >
-                    <FaPython
-                      style={{ color: "yellow" }}
-                      class="card-image w-16 h-16 object-cover rounded-full mb-4"
-                      alt="Stack 2"
-                    />
-                    <p class="card-title text-xl mb-2 text-center text-white">
-                      Python
-                    </p>
-                  </motion.div>
-                  <motion.div
-                    initial={{ y: -10, opacity: 0 }}
-                    animate={{ y: 0, opacity: 1 }}
-                    transition={{ duration: 0.1, delay: 0.2 }}
-                    class="card bg-[#363B49] rounded-lg p-4 w-45 h-40 sm:w-32 sm:h-32 flex flex-col items-center"
-                  >
-                    <BiLogoGit
-                      style={{ color: "red" }}
-                      class="card-image w-16 h-16 object-cover rounded-full mb-4"
-                      alt="Stack 2"
-                    />
-                    <p class="card-title text-xl mb-2 text-center text-white">
-                      Git
-                    </p>
-                  </motion.div>
-                </div>
+  <motion.div
+    initial={{ y: -10, opacity: 0 }}
+    animate={{ y: 0, opacity: 1 }}
+    transition={{ duration: 0.1, delay: 0.2 }}
+    class="card bg-[#363B49] rounded-lg p-4 w-45 h-40 sm:w-32 sm:h-32 items-center hover:bg-[#4A4E5C] sm:items-start"
+  >
+    <BiLogoFirebase
+      style={{ color: "yellow" }}
+      class="card-image w-16 h-16 object-cover rounded-full mb-4"
+      alt="Stack 1"
+    />
+    <p class="card-title text-xl mb-2 text-center text-white">
+      Firebase
+    </p>
+  </motion.div>
+  <motion.div
+    initial={{ y: -10, opacity: 0 }}
+    animate={{ y: 0, opacity: 1 }}
+    transition={{ duration: 0.1, delay: 0.2 }}
+    class="card bg-[#363B49] rounded-lg p-4 w-45 h-40 sm:w-32 sm:h-32 flex flex-col items-center"
+  >
+    <FaNodeJs
+      class="card-image w-16 h-16 object-cover rounded-full mb-4"
+      alt="Stack 2"
+      style={{ color: "green" }}
+    />
+    <p class="card-title text-xl mb-2 text-center text-white">
+      NodeJs
+    </p>
+  </motion.div>
+  <motion.div
+    initial={{ y: -10, opacity: 0 }}
+    animate={{ y: 0, opacity: 1 }}
+    transition={{ duration: 0.1, delay: 0.2 }}
+    class="card bg-[#363B49] rounded-lg p-4 w-45 h-40 sm:w-32 sm:h-32 flex flex-col items-center"
+  >
+    <TbBrandNextjs
+      style={{ color: "#61DAFB" }}
+      class="card-image w-16 h-16 object-cover rounded-full mb-4"
+      alt="Stack 2"
+    />
+    <p class="card-title text-xl mb-2 text-center text-white">
+      NextJs
+    </p>
+  </motion.div>
+  <motion.div
+    initial={{ y: -10, opacity: 0 }}
+    animate={{ y: 0, opacity: 1 }}
+    transition={{ duration: 0.1, delay: 0.2 }}
+    class="card bg-[#363B49] rounded-lg p-4 w-45 h-40 sm:w-32 sm:h-32 flex flex-col items-center"
+  >
+    <RiReactjsLine
+      style={{ color: "#61DAFB", fontSize: "30px" }}
+      class="card-image w-16 h-16 object-cover rounded-full mb-4"
+      alt="Stack 2"
+    />
+    <p class="card-title text-xl mb-2 text-center text-white">
+      ReactJs
+    </p>
+  </motion.div>
+  <motion.div
+    initial={{ y: -10, opacity: 0 }}
+    animate={{ y: 0, opacity: 1 }}
+    transition={{ duration: 0.1, delay: 0.2 }}
+    class="card bg-[#363B49] rounded-lg p-4 w-45 h-40 sm:w-32 sm:h-32 flex flex-col items-center"
+  >
+    <SiTailwindcss
+      style={{ color: "#61DAFB" }}
+      class="card-image w-16 h-16 object-cover rounded-full mb-4"
+      alt="Stack 2"
+    />
+    <p class="card-title text-xl mb-2 text-center text-white">
+      Tailwind
+    </p>
+  </motion.div>
+  <motion.div
+    initial={{ y: -10, opacity: 0 }}
+    animate={{ y: 0, opacity: 1 }}
+    transition={{ duration: 0.1, delay: 0.2 }}
+    class="card bg-[#363B49] rounded-lg p-4 w-45 h-40 sm:w-32 sm:h-32 flex flex-col items-center"
+  >
+    <SiJavascript
+      style={{ color: "yellow" }}
+      class="card-image w-16 h-16 object-cover rounded-full mb-4"
+      alt="Stack 2"
+    />
+    <p class="card-title text-xl mb-2 text-center text-white">
+      JavaScript
+    </p>
+  </motion.div>
+  <motion.div
+    initial={{ y: -10, opacity: 0 }}
+    animate={{ y: 0, opacity: 1 }}
+    transition={{ duration: 0.1, delay: 0.2 }}
+    class="card bg-[#363B49] p-4 w-45 h-40 sm:w-32 sm:h-32 flex flex-col items-center"
+  >
+    <FaPython
+      style={{ color: "yellow" }}
+      class="card-image w-16 h-16 object-cover rounded-full mb-4"
+      alt="Stack 2"
+    />
+    <p class="card-title text-xl mb-2 text-center text-white">
+      Python
+    </p>
+  </motion.div>
+  <motion.div
+    initial={{ y: -10, opacity: 0 }}
+    animate={{ y: 0, opacity: 1 }}
+    transition={{ duration: 0.1, delay: 0.2 }}
+    class="card bg-[#363B49] rounded-lg p-4 w-45 h-40 sm:w-32 sm:h-32 flex flex-col items-center"
+  >
+    <BiLogoGit
+      style={{ color: "red" }}
+      class="card-image w-16 h-16 object-cover rounded-full mb-4"
+      alt="Stack 2"
+    />
+    <p class="card-title text-xl mb-2 text-center text-white">
+      Git
+    </p>
+  </motion.div>
+</div>
               </div>
             </div>
           </div>
