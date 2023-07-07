@@ -286,11 +286,11 @@ export default function Home() {
                   />
                 </div>
               </a>
-              <p className="bg-[#003459] text-sm md:text-base p-2 md:p-6 rounded-md  dark:text-white">
-                Art Galary is a website where you can find all the art work of
-                your favorite artist. and you can also buy the art work from the
-                website. you can also find the art work of your{" "}
-                <span className="text-teal-500">favorite </span>artist.
+              <p className="bg-[#003459] text-sm md:text-base p-2 md:p-6 rounded-md dark:text-white">
+                Art Gallery is a website where you can find all the artwork of
+                your favorite artist. You can also buy the artwork from the
+                website. You can also find the artwork of your{" "}
+                <span className="text-teal-500">favorite</span> artist.
               </p>
             </div>
             <div
@@ -313,12 +313,12 @@ export default function Home() {
                   />
                 </div>
               </a>
-              <p className="bg-[#003459] text-sm md:text-base md:p-6 rounded-md  dark:text-white">
+              <p className="bg-[#003459] text-sm md:text-base md:p-6 rounded-md dark:text-white">
                 the effortless way to manage your job application documents.
                 Store your CV, certificates, images, and cover letters in one
                 secure place.{" "}
                 <span className="text-teal-500">
-                  and you can also share your data with other's
+                  and you can also share your data with other&apos;s
                 </span>{" "}
                 <ul
                   className="text-xs md:text-sm font-titleFont tracking-wide flex gap-2
@@ -352,14 +352,14 @@ export default function Home() {
                   alt="project7"
                 />
               </div>
-              <p className="bg-[#003459] text-sm md:text-base p-2 md:p-6 rounded-md  dark:text-white">
+              <p className="bg-[#003459] text-sm md:text-base p-2 md:p-6 rounded-md dark:text-white">
                 your go-to traffic monitoring and navigation website.
                 <span className="text-teal-500">
                   {" "}
                   informed about city traffic and effortlessly navigate to your
                   destination.
                 </span>
-                S Get real-time updates from fellow drivers, ensuring a smooth
+                Get real-time updates from fellow drivers, ensuring a smooth
                 journey. Try Traffi Watch today and make your commute a breeze.
                 <p>
                   {" "}
@@ -377,132 +377,132 @@ export default function Home() {
               <div className=" text-center text-white mt-6 ">
                 <h1 className=" font-bold text-2xl">Skills</h1>
                 <p className="bg-[#003459] mt-4 p-6">
-                  I have strong knowledge of HTML, CSS, JavaScript, React, Next
-                  js, Tailwind css, Node js, Express js, MongoDB, Git, Github,
-                  and Heroku. And I am also familiar with Firebase.
+                  I have strong knowledge of HTML, CSS, JavaScript, React,
+                  Next.js, Tailwind CSS, Node.js, Express.js, MongoDB, Git,
+                  Github, and Heroku. And I am also familiar with Firebase.
                 </p>
                 <div class="flex justify-center items-center mt-8 flex-wrap gap-5 sm:gap-8 sm:flex-row sm:justify-between">
-  <motion.div
-    initial={{ y: -10, opacity: 0 }}
-    animate={{ y: 0, opacity: 1 }}
-    transition={{ duration: 0.1, delay: 0.2 }}
-    class="card bg-[#363B49] rounded-lg p-4 w-45 h-40 sm:w-32 sm:h-32 items-center hover:bg-[#4A4E5C] sm:items-start"
-  >
-    <BiLogoFirebase
-      style={{ color: "yellow" }}
-      class="card-image w-16 h-16 object-cover rounded-full mb-4"
-      alt="Stack 1"
-    />
-    <p class="card-title text-xl mb-2 text-center text-white">
-      Firebase
-    </p>
-  </motion.div>
-  <motion.div
-    initial={{ y: -10, opacity: 0 }}
-    animate={{ y: 0, opacity: 1 }}
-    transition={{ duration: 0.1, delay: 0.2 }}
-    class="card bg-[#363B49] rounded-lg p-4 w-45 h-40 sm:w-32 sm:h-32 flex flex-col items-center"
-  >
-    <FaNodeJs
-      class="card-image w-16 h-16 object-cover rounded-full mb-4"
-      alt="Stack 2"
-      style={{ color: "green" }}
-    />
-    <p class="card-title text-xl mb-2 text-center text-white">
-      NodeJs
-    </p>
-  </motion.div>
-  <motion.div
-    initial={{ y: -10, opacity: 0 }}
-    animate={{ y: 0, opacity: 1 }}
-    transition={{ duration: 0.1, delay: 0.2 }}
-    class="card bg-[#363B49] rounded-lg p-4 w-45 h-40 sm:w-32 sm:h-32 flex flex-col items-center"
-  >
-    <TbBrandNextjs
-      style={{ color: "#61DAFB" }}
-      class="card-image w-16 h-16 object-cover rounded-full mb-4"
-      alt="Stack 2"
-    />
-    <p class="card-title text-xl mb-2 text-center text-white">
-      NextJs
-    </p>
-  </motion.div>
-  <motion.div
-    initial={{ y: -10, opacity: 0 }}
-    animate={{ y: 0, opacity: 1 }}
-    transition={{ duration: 0.1, delay: 0.2 }}
-    class="card bg-[#363B49] rounded-lg p-4 w-45 h-40 sm:w-32 sm:h-32 flex flex-col items-center"
-  >
-    <RiReactjsLine
-      style={{ color: "#61DAFB", fontSize: "30px" }}
-      class="card-image w-16 h-16 object-cover rounded-full mb-4"
-      alt="Stack 2"
-    />
-    <p class="card-title text-xl mb-2 text-center text-white">
-      ReactJs
-    </p>
-  </motion.div>
-  <motion.div
-    initial={{ y: -10, opacity: 0 }}
-    animate={{ y: 0, opacity: 1 }}
-    transition={{ duration: 0.1, delay: 0.2 }}
-    class="card bg-[#363B49] rounded-lg p-4 w-45 h-40 sm:w-32 sm:h-32 flex flex-col items-center"
-  >
-    <SiTailwindcss
-      style={{ color: "#61DAFB" }}
-      class="card-image w-16 h-16 object-cover rounded-full mb-4"
-      alt="Stack 2"
-    />
-    <p class="card-title text-xl mb-2 text-center text-white">
-      Tailwind
-    </p>
-  </motion.div>
-  <motion.div
-    initial={{ y: -10, opacity: 0 }}
-    animate={{ y: 0, opacity: 1 }}
-    transition={{ duration: 0.1, delay: 0.2 }}
-    class="card bg-[#363B49] rounded-lg p-4 w-45 h-40 sm:w-32 sm:h-32 flex flex-col items-center"
-  >
-    <SiJavascript
-      style={{ color: "yellow" }}
-      class="card-image w-16 h-16 object-cover rounded-full mb-4"
-      alt="Stack 2"
-    />
-    <p class="card-title text-xl mb-2 text-center text-white">
-      JavaScript
-    </p>
-  </motion.div>
-  <motion.div
-    initial={{ y: -10, opacity: 0 }}
-    animate={{ y: 0, opacity: 1 }}
-    transition={{ duration: 0.1, delay: 0.2 }}
-    class="card bg-[#363B49] p-4 w-45 h-40 sm:w-32 sm:h-32 flex flex-col items-center"
-  >
-    <FaPython
-      style={{ color: "yellow" }}
-      class="card-image w-16 h-16 object-cover rounded-full mb-4"
-      alt="Stack 2"
-    />
-    <p class="card-title text-xl mb-2 text-center text-white">
-      Python
-    </p>
-  </motion.div>
-  <motion.div
-    initial={{ y: -10, opacity: 0 }}
-    animate={{ y: 0, opacity: 1 }}
-    transition={{ duration: 0.1, delay: 0.2 }}
-    class="card bg-[#363B49] rounded-lg p-4 w-45 h-40 sm:w-32 sm:h-32 flex flex-col items-center"
-  >
-    <BiLogoGit
-      style={{ color: "red" }}
-      class="card-image w-16 h-16 object-cover rounded-full mb-4"
-      alt="Stack 2"
-    />
-    <p class="card-title text-xl mb-2 text-center text-white">
-      Git
-    </p>
-  </motion.div>
-</div>
+                  <motion.div
+                    initial={{ y: -10, opacity: 0 }}
+                    animate={{ y: 0, opacity: 1 }}
+                    transition={{ duration: 0.1, delay: 0.2 }}
+                    class="card bg-[#363B49] rounded-lg p-4 w-45 h-40 sm:w-32 sm:h-32 items-center hover:bg-[#4A4E5C] sm:items-start"
+                  >
+                    <BiLogoFirebase
+                      style={{ color: "yellow" }}
+                      class="card-image w-16 h-16 object-cover rounded-full mb-4"
+                      alt="Stack 1"
+                    />
+                    <p class="card-title text-xl mb-2 text-center text-white">
+                      Firebase
+                    </p>
+                  </motion.div>
+                  <motion.div
+                    initial={{ y: -10, opacity: 0 }}
+                    animate={{ y: 0, opacity: 1 }}
+                    transition={{ duration: 0.1, delay: 0.2 }}
+                    class="card bg-[#363B49] rounded-lg p-4 w-45 h-40 sm:w-32 sm:h-32 flex flex-col items-center"
+                  >
+                    <FaNodeJs
+                      class="card-image w-16 h-16 object-cover rounded-full mb-4"
+                      alt="Stack 2"
+                      style={{ color: "green" }}
+                    />
+                    <p class="card-title text-xl mb-2 text-center text-white">
+                      NodeJs
+                    </p>
+                  </motion.div>
+                  <motion.div
+                    initial={{ y: -10, opacity: 0 }}
+                    animate={{ y: 0, opacity: 1 }}
+                    transition={{ duration: 0.1, delay: 0.2 }}
+                    class="card bg-[#363B49] rounded-lg p-4 w-45 h-40 sm:w-32 sm:h-32 flex flex-col items-center"
+                  >
+                    <TbBrandNextjs
+                      style={{ color: "#61DAFB" }}
+                      class="card-image w-16 h-16 object-cover rounded-full mb-4"
+                      alt="Stack 2"
+                    />
+                    <p class="card-title text-xl mb-2 text-center text-white">
+                      NextJs
+                    </p>
+                  </motion.div>
+                  <motion.div
+                    initial={{ y: -10, opacity: 0 }}
+                    animate={{ y: 0, opacity: 1 }}
+                    transition={{ duration: 0.1, delay: 0.2 }}
+                    class="card bg-[#363B49] rounded-lg p-4 w-45 h-40 sm:w-32 sm:h-32 flex flex-col items-center"
+                  >
+                    <RiReactjsLine
+                      style={{ color: "#61DAFB", fontSize: "30px" }}
+                      class="card-image w-16 h-16 object-cover rounded-full mb-4"
+                      alt="Stack 2"
+                    />
+                    <p class="card-title text-xl mb-2 text-center text-white">
+                      ReactJs
+                    </p>
+                  </motion.div>
+                  <motion.div
+                    initial={{ y: -10, opacity: 0 }}
+                    animate={{ y: 0, opacity: 1 }}
+                    transition={{ duration: 0.1, delay: 0.2 }}
+                    class="card bg-[#363B49] rounded-lg p-4 w-45 h-40 sm:w-32 sm:h-32 flex flex-col items-center"
+                  >
+                    <SiTailwindcss
+                      style={{ color: "#61DAFB" }}
+                      class="card-image w-16 h-16 object-cover rounded-full mb-4"
+                      alt="Stack 2"
+                    />
+                    <p class="card-title text-xl mb-2 text-center text-white">
+                      Tailwind
+                    </p>
+                  </motion.div>
+                  <motion.div
+                    initial={{ y: -10, opacity: 0 }}
+                    animate={{ y: 0, opacity: 1 }}
+                    transition={{ duration: 0.1, delay: 0.2 }}
+                    class="card bg-[#363B49] rounded-lg p-4 w-45 h-40 sm:w-32 sm:h-32 flex flex-col items-center"
+                  >
+                    <SiJavascript
+                      style={{ color: "yellow" }}
+                      class="card-image w-16 h-16 object-cover rounded-full mb-4"
+                      alt="Stack 2"
+                    />
+                    <p class="card-title text-xl mb-2 text-center text-white">
+                      JavaScript
+                    </p>
+                  </motion.div>
+                  <motion.div
+                    initial={{ y: -10, opacity: 0 }}
+                    animate={{ y: 0, opacity: 1 }}
+                    transition={{ duration: 0.1, delay: 0.2 }}
+                    class="card bg-[#363B49] p-4 w-45 h-40 sm:w-32 sm:h-32 flex flex-col items-center"
+                  >
+                    <FaPython
+                      style={{ color: "yellow" }}
+                      class="card-image w-16 h-16 object-cover rounded-full mb-4"
+                      alt="Stack 2"
+                    />
+                    <p class="card-title text-xl mb-2 text-center text-white">
+                      Python
+                    </p>
+                  </motion.div>
+                  <motion.div
+                    initial={{ y: -10, opacity: 0 }}
+                    animate={{ y: 0, opacity: 1 }}
+                    transition={{ duration: 0.1, delay: 0.2 }}
+                    class="card bg-[#363B49] rounded-lg p-4 w-45 h-40 sm:w-32 sm:h-32 flex flex-col items-center"
+                  >
+                    <BiLogoGit
+                      style={{ color: "red" }}
+                      class="card-image w-16 h-16 object-cover rounded-full mb-4"
+                      alt="Stack 2"
+                    />
+                    <p class="card-title text-xl mb-2 text-center text-white">
+                      Git
+                    </p>
+                  </motion.div>
+                </div>
               </div>
             </div>
           </div>
