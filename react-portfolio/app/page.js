@@ -393,7 +393,7 @@ export default function Home() {
                       class="card-image w-16 h-16 object-cover rounded-full mb-4"
                       alt="Stack 1"
                     />
-                    <p class="card-title text-xl mb-2 text-center text-white">
+                    <p class="card-title text-sm mb-2 text-center text-white">
                       Firebase
                     </p>
                   </motion.div>
@@ -408,7 +408,7 @@ export default function Home() {
                       alt="Stack 2"
                       style={{ color: "green" }}
                     />
-                    <p class="card-title text-xl mb-2 text-center text-white">
+                    <p class="card-title text-sm mb-2 text-center text-white">
                       NodeJs
                     </p>
                   </motion.div>
@@ -423,7 +423,7 @@ export default function Home() {
                       class="card-image w-16 h-16 object-cover rounded-full mb-4"
                       alt="Stack 2"
                     />
-                    <p class="card-title text-xl mb-2 text-center text-white">
+                    <p class="card-title text-sm mb-2 text-center text-white">
                       NextJs
                     </p>
                   </motion.div>
@@ -434,11 +434,11 @@ export default function Home() {
                     class="card bg-[#363B49] rounded-lg p-4 w-45 h-40 sm:w-32 sm:h-32 flex flex-col items-center"
                   >
                     <RiReactjsLine
-                      style={{ color: "#61DAFB", fontSize: "30px" }}
+                      style={{ color: "#61DAFB", fontSize: "20px" }}
                       class="card-image w-16 h-16 object-cover rounded-full mb-4"
                       alt="Stack 2"
                     />
-                    <p class="card-title text-xl mb-2 text-center text-white">
+                    <p class="card-title text-sm mb-2 text-center text-white">
                       ReactJs
                     </p>
                   </motion.div>
@@ -449,11 +449,11 @@ export default function Home() {
                     class="card bg-[#363B49] rounded-lg p-4 w-45 h-40 sm:w-32 sm:h-32 flex flex-col items-center"
                   >
                     <SiTailwindcss
-                      style={{ color: "#61DAFB" }}
+                      style={{ color: "#61DAFB", fontSize: "20px" }}
                       class="card-image w-16 h-16 object-cover rounded-full mb-4"
                       alt="Stack 2"
                     />
-                    <p class="card-title text-xl mb-2 text-center text-white">
+                    <p class="card-title text-sm mb-2 text-center text-white">
                       Tailwind
                     </p>
                   </motion.div>
@@ -464,11 +464,11 @@ export default function Home() {
                     class="card bg-[#363B49] rounded-lg p-4 w-45 h-40 sm:w-32 sm:h-32 flex flex-col items-center"
                   >
                     <SiJavascript
-                      style={{ color: "yellow" }}
+                      style={{ color: "yellow", fontSize: "20px" }}
                       class="card-image w-16 h-16 object-cover rounded-full mb-4"
                       alt="Stack 2"
                     />
-                    <p class="card-title text-xl mb-2 text-center text-white">
+                    <p class="card-title text-sm mb-2 text-center text-white">
                       JavaScript
                     </p>
                   </motion.div>
@@ -476,14 +476,15 @@ export default function Home() {
                     initial={{ y: -10, opacity: 0 }}
                     animate={{ y: 0, opacity: 1 }}
                     transition={{ duration: 0.1, delay: 0.2 }}
-                    class="card bg-[#363B49] p-4 w-45 h-40 sm:w-32 sm:h-32 flex flex-col items-center"
+                    class="card bg-[#363B49] p-4 w-45 h-40 sm:w-32 sm:h-32 flex flex-col items-center cursor-pointer
+                    hover:translate-x-2 transition-all ease-in-out duration-300 hover:text-Green"
                   >
                     <FaPython
-                      style={{ color: "yellow" }}
+                      style={{ color: "yellow", fontSize: "20px" }}
                       class="card-image w-16 h-16 object-cover rounded-full mb-4"
                       alt="Stack 2"
                     />
-                    <p class="card-title text-xl mb-2 text-center text-white">
+                    <p class="card-title text-sm mb-2 text-center text-white">
                       Python
                     </p>
                   </motion.div>
@@ -494,11 +495,11 @@ export default function Home() {
                     class="card bg-[#363B49] rounded-lg p-4 w-45 h-40 sm:w-32 sm:h-32 flex flex-col items-center"
                   >
                     <BiLogoGit
-                      style={{ color: "red" }}
+                      style={{ color: "red", fontSize: "20px" }}
                       class="card-image w-16 h-16 object-cover rounded-full mb-4"
                       alt="Stack 2"
                     />
-                    <p class="card-title text-xl mb-2 text-center text-white">
+                    <p class="card-title text-sm mb-2 text-center text-white">
                       Git
                     </p>
                   </motion.div>
