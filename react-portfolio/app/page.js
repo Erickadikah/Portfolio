@@ -31,6 +31,8 @@ import { SiTailwindcss } from "react-icons/si";
 import { SiJavascript } from "react-icons/si";
 import { BsReddit, BsInstagram } from "react-icons/bs";
 import { motion } from "framer-motion";
+import { FaPython } from "react-icons/fa";
+import { BiLogoGit } from "react-icons/bi";
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
@@ -45,7 +47,7 @@ export default function Home() {
       <main className=" bg-white px-10 dark:bg-gray-900 md:px-20 lg:px-40">
         <section className="min-h-screen">
           <nav className="py-10 mb-12 flex justify-between dark:text-white">
-            <h1 className="font-burtons text-xl">@Rick</h1>
+            <h1 className="font-burtons text-xl font-bold">@Rick</h1>
             <ul className="flex items-center">
               <li>
                 <BsFillMoonStarsFill
@@ -366,12 +368,12 @@ export default function Home() {
                   js, Tailwind css, Node js, Express js, MongoDB, Git, Github,
                   and Heroku. And I am also familiar with Firebase.
                 </p>
-                <div class="flex justify-center items-center mt-8 flex-wrap gap-5 sm:gap-12 sm:flex-row sm:justify-between">
+                <div class="flex justify-center items-center mt-8 flex-wrap gap-5 sm:gap-8 sm:flex-row sm:justify-between">
                   <motion.div
                     initial={{ y: -10, opacity: 0 }}
                     animate={{ y: 0, opacity: 1 }}
                     transition={{ duration: 0.1, delay: 0.2 }}
-                    class="card bg-[#363B49] rounded-lg p-4 w-45 h-40 sm:w-32 sm:h-32 items-center"
+                    class="card bg-[#363B49] rounded-lg p-4 w-45 h-40 sm:w-32 sm:h-32 items-center hover:bg-[#4A4E5C]"
                   >
                     <BiLogoFirebase
                       style={{ color: "yellow" }}
@@ -391,6 +393,7 @@ export default function Home() {
                     <FaNodeJs
                       class="card-image w-16 h-16 object-cover rounded-full mb-4"
                       alt="Stack 2"
+                      style={{ color: "green" }}
                     />
                     <p class="card-title text-xl mb-2 text-center text-white">
                       NodeJs
@@ -418,7 +421,7 @@ export default function Home() {
                     class="card bg-[#363B49] rounded-lg p-4 w-45 h-40 sm:w-32 sm:h-32 flex flex-col items-center"
                   >
                     <RiReactjsLine
-                      style={{ color: "#61DAFB" }}
+                      style={{ color: "#61DAFB", fontSize: "30px" }}
                       class="card-image w-16 h-16 object-cover rounded-full mb-4"
                       alt="Stack 2"
                     />
@@ -455,6 +458,36 @@ export default function Home() {
                     />
                     <p class="card-title text-xl mb-2 text-center text-white">
                       JavaScript
+                    </p>
+                  </motion.div>
+                   <motion.div
+                    initial={{ y: -10, opacity: 0 }}
+                    animate={{ y: 0, opacity: 1 }}
+                    transition={{ duration: 0.1, delay: 0.2 }}
+                    class="card bg-[#363B49] p-4 w-45 h-40 sm:w-32 sm:h-32 flex flex-col items-center"
+                  >
+                    <FaPython
+                      style={{ color: "yellow" }}
+                      class="card-image w-16 h-16 object-cover rounded-full mb-4"
+                      alt="Stack 2"
+                    />
+                    <p class="card-title text-xl mb-2 text-center text-white">
+                      Python
+                    </p>
+                  </motion.div>
+                  <motion.div
+                    initial={{ y: -10, opacity: 0 }}
+                    animate={{ y: 0, opacity: 1 }}
+                    transition={{ duration: 0.1, delay: 0.2 }}
+                    class="card bg-[#363B49] rounded-lg p-4 w-45 h-40 sm:w-32 sm:h-32 flex flex-col items-center"
+                  >
+                    <BiLogoGit
+                      style={{ color: "red" }}
+                      class="card-image w-16 h-16 object-cover rounded-full mb-4"
+                      alt="Stack 2"
+                    />
+                    <p class="card-title text-xl mb-2 text-center text-white">
+                      Git
                     </p>
                   </motion.div>
                 </div>
