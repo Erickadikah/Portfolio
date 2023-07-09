@@ -286,14 +286,14 @@ export default function Home() {
                   />
                 </div>
               </a>
-              <p className="bg-[#363B49] text-sm md:text-base p-2 md:p-6 rounded-md dark:text-white">
+              <p className="bg-[#363B49] text-sm text-teal-500 md:text-base p-2 md:p-6 rounded-md dark:text-white">
                 Art Gallery is a website where you can find all the artwork of
                 your favorite artist. You can also buy the artwork from the
                 website. You can also find the artwork of your{" "}
                 <span className="text-teal-500">favorite</span> artist.
                 <p>Stack Used</p>
                 <ul
-                    className="text-xs md:text-sm font-titleFont tracking-wide flex gap-2
+                    className="text-xs md:text-sm text-teal-500 tracking-wide flex gap-2
                   md:gap-5 justify-between text-textDark flex-wrap"
                   >
                     <li className="text-sm md:text-base">React</li>
@@ -326,7 +326,7 @@ export default function Home() {
                   />
                 </div>
               </a>
-              <p className="bg-[#363B49] text-sm md:text-base md:p-6 rounded-md dark:text-white">
+              <p className="bg-[#363B49] text-sm md:text-base text-teal-500 md:p-6 rounded-md dark:text-white">
                 the effortless way to manage your job application documents.
                 Store your CV, certificates, images, and cover letters in one
                 secure place.{" "}
@@ -335,7 +335,7 @@ export default function Home() {
                 </span>{" "}
                 <ul
                   className="text-xs md:text-sm font-titleFont tracking-wide flex gap-2
-                md:gap-5 justify-between text-textDark flex-wrap"
+                md:gap-5 justify-between text-teal-500 flex-wrap"
                 >
                   <li className="text-sm md:text-base">React</li>
                   <li className="text-sm md:text-base">JavaScript</li>
@@ -365,7 +365,7 @@ export default function Home() {
                   alt="project7"
                 />
               </div>
-              <p className="bg-[#363B49] text-sm md:text-base p-2 md:p-6 rounded-md dark:text-white">
+              <p className="bg-[#363B49] text-sm text-teal-500 md:text-base p-2 md:p-6 rounded-md dark:text-white">
                 your go-to traffic monitoring and navigation website.
                 <span className="text-teal-500">
                   {" "}
@@ -392,7 +392,8 @@ export default function Home() {
                 <p className="bg-[#363B49] mt-4 p-6">
                   I have strong knowledge of JavaScript, React,
                   Next.js, Tailwind CSS, Node.js, Express.js, MongoDB, Git,
-                  Github, and Heroku. And I am also familiar with Firebase.
+                  Github, and Heroku. And I am also familiar with Firebase,
+                  Currently Learnign NextJs  and Dockerization of appliaction.
                 </p>
                 <div class="flex justify-center items-center mt-8 flex-wrap gap-5 sm:gap-8 sm:flex-row sm:justify-between basis-1/3 flex-1">
                   <motion.div
