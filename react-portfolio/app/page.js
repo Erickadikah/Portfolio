@@ -265,7 +265,7 @@ export default function Home() {
               />
             </div>
             <div
-              className="w-full x1:w-1/2 fle flex-col gap-6 
+              className="w-full basis-1/3 flex-1 fle flex-col gap-6
           items-end text-right x1:-m-1-16 z-10"
             >
               <p className="font-titleFont text-textGreen text-center text-sm tracking-wide dark:text-white">
@@ -286,15 +286,28 @@ export default function Home() {
                   />
                 </div>
               </a>
-              <p className="bg-[#003459] text-sm md:text-base p-2 md:p-6 rounded-md dark:text-white">
+              <p className="bg-[#363B49] text-sm md:text-base p-2 md:p-6 rounded-md dark:text-white">
                 Art Gallery is a website where you can find all the artwork of
                 your favorite artist. You can also buy the artwork from the
                 website. You can also find the artwork of your{" "}
                 <span className="text-teal-500">favorite</span> artist.
+                <p>Stack Used</p>
+                <ul
+                    className="text-xs md:text-sm font-titleFont tracking-wide flex gap-2
+                  md:gap-5 justify-between text-textDark flex-wrap"
+                  >
+                    <li className="text-sm md:text-base">React</li>
+                    <li className="text-sm md:text-base">JavaScript</li>
+                    <li className="text-sm md:text-base">NodeJs</li>
+                    <li className="text-sm md:text-base">Express</li>
+                    <li className="text-sm md:text-base">MongoDB</li>
+                    <li className="text-sm md:text-base">Redux</li>
+                    <li className="text-sm md:text-base">Netlify Deployment </li>
+                  </ul>
               </p>
             </div>
             <div
-              className="w-full x1:w-1/2 fle flex-col gap-6 
+              className="w-full basis-1/3 flex-1 fle flex-col gap-6 
               items-end text-right x1:-m-1-16 z-10"
             >
               <p className="font-titleFont text-textGreen text-center text-sm tracking-wide dark:text-white">
@@ -313,7 +326,7 @@ export default function Home() {
                   />
                 </div>
               </a>
-              <p className="bg-[#003459] text-sm md:text-base md:p-6 rounded-md dark:text-white">
+              <p className="bg-[#363B49] text-sm md:text-base md:p-6 rounded-md dark:text-white">
                 the effortless way to manage your job application documents.
                 Store your CV, certificates, images, and cover letters in one
                 secure place.{" "}
@@ -335,7 +348,7 @@ export default function Home() {
               </p>
             </div>
             <div
-              className="w-full x1:w-1/2 fle flex-col gap-6 
+              className="w-full x1:w-1/2 flex flex-col gap-6 
               items-end text-right x1:-m-1-16 z-10"
             >
               <p className="font-titleFont text-textGreen text-center text-sm tracking-wide dark:text-white">
@@ -352,7 +365,7 @@ export default function Home() {
                   alt="project7"
                 />
               </div>
-              <p className="bg-[#003459] text-sm md:text-base p-2 md:p-6 rounded-md dark:text-white">
+              <p className="bg-[#363B49] text-sm md:text-base p-2 md:p-6 rounded-md dark:text-white">
                 your go-to traffic monitoring and navigation website.
                 <span className="text-teal-500">
                   {" "}
@@ -376,12 +389,12 @@ export default function Home() {
               </p>
               <div className=" text-center text-white mt-6 ">
                 <h1 className=" font-bold text-2xl">Skills</h1>
-                <p className="bg-[#003459] mt-4 p-6">
-                  I have strong knowledge of HTML, CSS, JavaScript, React,
+                <p className="bg-[#363B49] mt-4 p-6">
+                  I have strong knowledge of JavaScript, React,
                   Next.js, Tailwind CSS, Node.js, Express.js, MongoDB, Git,
                   Github, and Heroku. And I am also familiar with Firebase.
                 </p>
-                <div class="flex justify-center items-center mt-8 flex-wrap gap-5 sm:gap-8 sm:flex-row sm:justify-between">
+                <div class="flex justify-center items-center mt-8 flex-wrap gap-5 sm:gap-8 sm:flex-row sm:justify-between basis-1/3 flex-1">
                   <motion.div
                     initial={{ y: -10, opacity: 0 }}
                     animate={{ y: 0, opacity: 1 }}
